@@ -1,80 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
     <head>
         <title>project</title>
 		<meta charset="UTF-8">
     </head>
     <body>
         <header>
-				<a  href="#" class="logo"><img src="http://placehold.it/150x100" alt="MAGNO"></a>
-				<a href="#" class="phone">+7 900 000 00 00</a>
-				<form>
-					<input type="text" value="Поиск по сайту">
-				</form>
-				<a href="#" class="account">Личный кабинет</a>
-				<a href="#" class="basket">Корзина</a>	
-		</header>
-		
-		<nav>
-				<ul>
-					<li><a href="#">Все категории</a></li>
+			<nav>
+				<ul class="sup-menu">
+					<li><a class="logo"><img src="http://placehold.it/150x100" alt="MAGNO"></a></li>
+					<li><a href="tel:+79000000000" class="phone">+7 900 000 00 00</a></li>
+					<li><form><input type="search" value="Поиск по сайту"></form></li>
+					<li><a href="#" class="account">Личный кабинет</a></li>
+					<li><a href="#" class="basket">Корзина</a></li>
 				</ul>
-				<ul>
+				<ul class="sub-menu">
+					<li><a href="#">Все категории</a>
+						<ul>
+							<li><a href="#">Роутеры</a></li>
+							<li><a href="#">Игровые симуляторы</a></li>
+							<li><a href="#">Комплектующие</a></li>
+							<li><a href="#">Периферия</a></li>
+							<li><a href="#">Настольные лампы</a></li>
+							<li><a href="#">Моноблоки и ноутбуки</a></li>
+						</ul>
+					</li>
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Гарантии</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
-		</nav>
-		
+			</nav>
+		</header>
 		<main>
 			<section class="slaider-1">
-				<h1>НОУТБУКИ <span>ДЛЯ ОФИСА И ДОМА</span></h1>
-				<img src="http://placehold.it/150x100" alt="Ноутбук">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-				<button>Подробнее</button>
-				<form>
-					<label for="slaider1.1"></label>
-					<input id="slaider1.1" name="slaider1" type="radio">
-					<label for="slaider1.2"></label>
-					<input id="slaider1.2" name="slaider1" type="radio">
-					<label for="slaider1.3"></label>
-					<input id="slaider1.3" name="slaider1" type="radio">
-				</form>
+				<div class="slaider-main-1">
+					<div class="slaider-radio-1">
+						<label for="slaider1-1"></label>
+						<label for="slaider1-2"></label>
+						<label for="slaider1-3"></label>
+					</div>
+					<div class="slaider-content">
+						<input id="slaider1-1" name="slaider1" type="radio">
+						<div class="slaider-item1-1">
+							<h2>НОУТБУКИ <span>ДЛЯ ОФИСА И ДОМА</span></h2>
+							<img src="http://placehold.it/150x100" alt="Ноутбук">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+							<a href="#" class="btn">Подробнее</a>
+						</div>
+						<input id="slaider1-2" name="slaider1" type="radio">
+						<div class="slaider-item1-2">
+							<h2>ВСЯ ПЕРИФЕРИЯ<span>ПО САМЫМ НИЗКИМ ЦЕНАМ</span></h2>
+							<img src="http://placehold.it/150x100" alt="Периферия">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+							<a href="#" class="btn">Подробнее</a>
+						</div>
+						<input id="slaider1-3" name="slaider1" type="radio">
+						<div class="slaider-item1-3">
+							<div>
+							<h2>ТОЛЬКО ЭТОЙ ОСЕНЬЮ<span>СКИДКА НА ВСЕ НОУТБУКИ</span>30%</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+							<a href="#" class="btn">Подробнее</a>
+							</div>
+							<img src="http://placehold.it/150x100" alt="Ноутбук">
+						</div>
+					</div>
+				</div>
 			</section>
-			<section>
+			<section class="catalog">
+				<h2 style="display: none">Каталог</h2>
 			    <ul>
-					<li><a><img src="http://placehold.it/150x100" >МОНОБЛОКИ И НОУТБУКИ</a></li>
-					<li><a><img src="http://placehold.it/150x100" >ПЕРИФЕРИЯ</a></li>
-					<li><a><img src="http://placehold.it/150x100" >КОМПЛЕКТУЮЩИЕ</a></li>
-					<li><a><img src="http://placehold.it/150x100" >РОУТЕРЫ</a></li>
-					<li><a><img src="http://placehold.it/150x100" >НАСТОЛЬНЫЕ ЛАМПЫ</a></li>
-					<li><a><img src="http://placehold.it/150x100" >ИГРОВЫЕ СИМУЛЯТОРЫ</a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="МОНОБЛОКИ И НОУТБУКИ" >МОНОБЛОКИ И НОУТБУКИ</a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="ПЕРИФЕРИЯ">ПЕРИФЕРИЯ</a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="КОМПЛЕКТУЮЩИЕ">КОМПЛЕКТУЮЩИЕ</a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="РОУТЕРЫ">РОУТЕРЫ</a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="НАСТОЛЬНЫЕ ЛАМПЫ">НАСТОЛЬНЫЕ ЛАМПЫ</a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="ИГРОВЫЕ СИМУЛЯТОРЫ">ИГРОВЫЕ СИМУЛЯТОРЫ</a></li>
 				</ul>
 			</section>
 			<section class="slaider-2">
-				<form>
-					<label for="slaider2.1"></label>
-					<input id="slaider2.1" name="slaider2" type="radio">
-					<label for="slaider2.2"></label>
-					<input id="slaider2.2" name="slaider2" type="radio">
-					<label for="slaider2.3"></label>
-					<input id="slaider2.3" name="slaider2" type="radio">
-				</form>
+				<div class="slaider-main-2">
+					<div class="slaider-radio-2">
+						<label for="slaider2-1">Доставка</label>
+						<label for="slaider2-2">Гарантия</label>
+						<label for="slaider2-3">Кредит</label>
+					</div>
+					<div class="slaider-content-2">
+						<input id="slaider2-1" name="slaider2" type="radio">
+						<div class="slaider-item2-1">
+							<h2>Доставка</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+							<img src="http://placehold.it/150x100" alt="Доставка">
+						</div>
+						<input id="slaider2-2" name="slaider2" type="radio">
+						<div class="slaider-item2-2">
+							<h2>Гарантия</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+							<img src="http://placehold.it/150x100" alt="Гарантия">
+						</div>
+						<input id="slaider2-3" name="slaider2" type="radio">
+						<div class="slaider-item2-3">
+							<h2>Кредит</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+							<img src="http://placehold.it/150x100" alt="Кредит">
+						</div>
+					</div>
+				</div>
 			</section>
-			<section>
-				<section>
-					<ul>
-						<li><img src="http://placehold.it/150x100" alt="schneider elrctric"></li>
-						<li><img src="http://placehold.it/150x100" alt="legrand"></li>
-						<li><img src="http://placehold.it/150x100" alt="bticino"></li>
-						<li><img src="http://placehold.it/150x100" alt="dekraft"></li>
-						<li><img src="http://placehold.it/150x100" alt="jung"></li>
-						<li><img src="http://placehold.it/150x100" alt="gira"></li>
-						<li><img src="http://placehold.it/150x100" alt="dkc"></li>
-						<li><img src="http://placehold.it/150x100" alt="cct"></li>
-					</ul>
-				</section>
-				<section>
+			<section class="brends">
+				<h2 style="display: none">Бренды</h2>
+				<ul>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="schneider elrctric"></a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="legrand"></a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="bticino"></a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="dekraft"></a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="jung"></a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="gira"></a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="dkc"></a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="cct"></a></li>
+				</ul>
+			</section>
+			<section class="about-us">
+				<div class="about-us-item">
 					<h2>наша компания</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -88,44 +134,50 @@
 						<li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						Sed ut perspiciatis, unde omnis iste natus error sit</li>
 					</ul>
-					<h3><a>напишите нам</a></h3>
-					<action>
-						<h2>почтовая рассылка</h2>
-						<p>Узнавайте первым о новостях, акциях и скидках интернет-магазина</p>
-						<form>
-							<input name="email" type="text">
-						</form>
-						<p>Указанная информация не будет передана третьим лицам. Вы можете отписаться от почтовой рассылки в любое время</p>
-						<button>Подписаться</button>
-					</action>
-				</section>
+					<a href="#">напишите нам</a>
+				</div>
+				<div class="spam">
+					<h2>почтовая рассылка</h2>
+					<p>Узнавайте первым о новостях, акциях и скидках интернет-магазина</p>
+					<form>
+						<input name="email" type="email">
+					</form>
+					<p>Указанная информация не будет передана третьим лицам. Вы можете отписаться от почтовой рассылки в любое время</p>
+					<input type="submit" value="Подписаться">
+				</div>
 			</section>
 		</main>
 		<footer>
-			<section>
-				<section>
-					<a  href="#" class="logo"><img src="http://placehold.it/150x100" alt="MAGNO"></a>
-					<p>Г. МОСКВА, Ул. СТРОИТЕЛЕЙ, 15 К 1 ОФИС 456</p>
+			<div class="footer-1block">
+				<div class="footer-item-1">
+					<a class="logo"><img src="http://placehold.it/150x100" alt="MAGNO"></a>
+					<div>
+						<p>Г. МОСКВА, Ул. СТРОИТЕЛЕЙ, 15 К 1 ОФИС 456</p>
+						<a href="tel+88005000616">8-800-5000-616</a>
+					</div>
 					<ul>
 						<li><a href="#">Личный кабинет</a></li>
 						<li><a href="#">Корзина</a></li>
 					</ul>						
-				</section>
-				<section>
-					<h2>8-800-5000-616</h2>
-				</section>
-				<section>
+				</div>
+				<div class="footer-item-2">
 					<ul>
 						<li><a href="#">Доставка</a></li>
 						<li><a href="#">Гарантии</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d668.6625481160607!2d37.52920381164877!3d55.6871838047643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1504965579378" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</section>
-			</section>
-			<section>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d668.6625481160607!2d37.52920381164877!3d55.6871838047643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1504965579378" width="600" height="450" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="footer-2block">
 				<p>Все права защищены 2017</p>
-			</section>
+				<ul>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="vk"></a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="facebook"></a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="twitter"></a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="mail.ru"></a></li>
+				</ul>
+			</div>
 		</footer>
     </body>
 </html>
