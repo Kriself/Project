@@ -1,0 +1,112 @@
+@font-face {
+    font-family:Century Gothic;
+    src:url(/fonts/century.ttf);
+}
+.slaider-item1-1{
+    width:620px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+}
+.slaider-item1-2{
+    width:620px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+}
+.slaider-item1-3{
+    width:620px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+}
+.slaider-1 input{
+    display:none;
+}
+.slaider-2 input{
+    display:none;
+}
+body{
+    font-family:Century Gothic;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+.sup-menu{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+}
+.logo{
+    flex-grow:1;
+}
+.sup-menu li{
+    width:200px;
+}
+.sub-menu{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:nowrap;
+}
+.categories{
+    flex-grow:1;
+}
+.categories ul{
+    display:flex;
+    width:420px;
+    flex-wrap:wrap;
+}
+.categories ul li{
+    padding:5px;
+}
+.catalog1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.catalog1 li{
+    text-align: center;
+    width:150px;
+}
+.brends ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:nowrap;
+}
+footer{
+    display:flex;
+    flex-direction:column;
+}
+.footer-1block{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.footer-2block{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.footer-2block p{
+    flex-grow:1;
+}
+.footer-2block ul {
+    display: flex;
+    flex-direction:row;
+}
+.phone{
+    padding-top:100px;
+}
+.footer-item-2 ul{
+    padding:0;
+    width:400px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}

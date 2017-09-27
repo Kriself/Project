@@ -3,19 +3,21 @@
     <head>
         <title>project</title>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/normalize.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
         <header>
 			<nav>
 				<ul class="sup-menu">
-					<li><a class="logo"><img src="http://placehold.it/150x100" alt="MAGNO"></a></li>
+					<li class="logo"><a><img src="http://placehold.it/150x100" alt="MAGNO"></a></li>
 					<li><a href="tel:+79000000000" class="phone">+7 900 000 00 00</a></li>
 					<li><form><input type="search" value="Поиск по сайту"></form></li>
 					<li><a href="#" class="account">Личный кабинет</a></li>
 					<li><a href="#" class="basket">Корзина</a></li>
 				</ul>
 				<ul class="sub-menu">
-					<li><a href="#">Все категории</a>
+					<li class="categories"><a href="#">Все категории</a>
 						<ul>
 							<li><a href="#">Роутеры</a></li>
 							<li><a href="#">Игровые симуляторы</a></li>
@@ -42,39 +44,49 @@
 					<div class="slaider-content">
 						<input id="slaider1-1" name="slaider1" type="radio">
 						<div class="slaider-item1-1">
-							<h2>НОУТБУКИ <span>ДЛЯ ОФИСА И ДОМА</span></h2>
-							<img src="http://placehold.it/150x100" alt="Ноутбук">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-							<a href="#" class="btn">Подробнее</a>
+							<div>
+								<h2>НОУТБУКИ<br><span>ДЛЯ ОФИСА И ДОМА</span></h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+								<a href="#" class="btn">Подробнее</a>
+							</div>
+							<div>
+								<img src="http://placehold.it/150x100" alt="Ноутбук">
+							</div>
 						</div>
 						<input id="slaider1-2" name="slaider1" type="radio">
 						<div class="slaider-item1-2">
-							<h2>ВСЯ ПЕРИФЕРИЯ<span>ПО САМЫМ НИЗКИМ ЦЕНАМ</span></h2>
-							<img src="http://placehold.it/150x100" alt="Периферия">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-							<a href="#" class="btn">Подробнее</a>
+							<div>
+								<h2>ВСЯ ПЕРИФЕРИЯ<br><span>ПО САМЫМ НИЗКИМ ЦЕНАМ</span></h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+								<a href="#" class="btn">Подробнее</a>
+							</div>
+							<div>
+								<img src="http://placehold.it/150x100" alt="Периферия">
+							</div>
 						</div>
 						<input id="slaider1-3" name="slaider1" type="radio">
 						<div class="slaider-item1-3">
-							<div>
-							<h2>ТОЛЬКО ЭТОЙ ОСЕНЬЮ<span>СКИДКА НА ВСЕ НОУТБУКИ</span>30%</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-							<a href="#" class="btn">Подробнее</a>
-							</div>
-							<img src="http://placehold.it/150x100" alt="Ноутбук">
+								<div>
+									<h2>ТОЛЬКО ЭТОЙ ОСЕНЬЮ<br><span>СКИДКА НА ВСЕ НОУТБУКИ</span>30%</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+									<a href="#" class="btn">Подробнее</a>
+								</div>
+								<div>
+									<img src="http://placehold.it/150x100" alt="Ноутбук">
+								</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="catalog">
 				<h2 style="display: none">Каталог</h2>
-			    <ul>
-					<li><a href="#"><img src="http://placehold.it/150x100" alt="МОНОБЛОКИ И НОУТБУКИ" >МОНОБЛОКИ И НОУТБУКИ</a></li>
-					<li><a href="#"><img src="http://placehold.it/150x100" alt="ПЕРИФЕРИЯ">ПЕРИФЕРИЯ</a></li>
-					<li><a href="#"><img src="http://placehold.it/150x100" alt="КОМПЛЕКТУЮЩИЕ">КОМПЛЕКТУЮЩИЕ</a></li>
-					<li><a href="#"><img src="http://placehold.it/150x100" alt="РОУТЕРЫ">РОУТЕРЫ</a></li>
-					<li><a href="#"><img src="http://placehold.it/150x100" alt="НАСТОЛЬНЫЕ ЛАМПЫ">НАСТОЛЬНЫЕ ЛАМПЫ</a></li>
-					<li><a href="#"><img src="http://placehold.it/150x100" alt="ИГРОВЫЕ СИМУЛЯТОРЫ">ИГРОВЫЕ СИМУЛЯТОРЫ</a></li>
+			    <ul class="catalog1">
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="МОНОБЛОКИ И НОУТБУКИ"><br>МОНОБЛОКИ И НОУТБУКИ</a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="ПЕРИФЕРИЯ"><br>ПЕРИФЕРИЯ</a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="КОМПЛЕКТУЮЩИЕ"><br>КОМПЛЕКТУЮЩИЕ</a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="РОУТЕРЫ"><br>РОУТЕРЫ</a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="НАСТОЛЬНЫЕ ЛАМПЫ"><br>НАСТОЛЬНЫЕ ЛАМПЫ</a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100" alt="ИГРОВЫЕ СИМУЛЯТОРЫ"><br>ИГРОВЫЕ СИМУЛЯТОРЫ</a></li>
 				</ul>
 			</section>
 			<section class="slaider-2">
@@ -153,12 +165,14 @@
 					<a class="logo"><img src="http://placehold.it/150x100" alt="MAGNO"></a>
 					<div>
 						<p>Г. МОСКВА, Ул. СТРОИТЕЛЕЙ, 15 К 1 ОФИС 456</p>
-						<a href="tel+88005000616">8-800-5000-616</a>
 					</div>
 					<ul>
 						<li><a href="#">Личный кабинет</a></li>
 						<li><a href="#">Корзина</a></li>
 					</ul>						
+				</div>
+				<div class="phone">
+					<a href="tel+88005000616">8-800-5000-616</a>
 				</div>
 				<div class="footer-item-2">
 					<ul>
@@ -166,8 +180,7 @@
 						<li><a href="#">Гарантии</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d668.6625481160607!2d37.52920381164877!3d55.6871838047643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1504965579378" width="600" height="450" style="border:0" allowfullscreen></iframe>
-				</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1416.8643751498641!2d37.52751857599944!3d55.68669307466709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1506178609559" width="600" height="200" style="border:0" allowfullscreen></iframe></div>
 			</div>
 			<div class="footer-2block">
 				<p>Все права защищены 2017</p>
