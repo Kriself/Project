@@ -11,7 +11,7 @@
 		<nav>
 			<div class="wrapperSupMenu">
 				<ul class="sup-menu">
-					<li class="logo"><a><img src="image/logo.png" alt="MAGNO"></a></li>
+					<li class="logo"><a href="index.html"><img src="image/logo.png" alt="MAGNO"></a></li>
 					<li><a href="tel:+79000000000" class="phone">+7 900 000 00 00</a></li>
 					<li><form><input type="search" placeholder="Поиск по сайту" id="searchOnSite"><label for="searchOnSite"></label></form></li>
 					<li><a href="#" class="account">Личный кабинет</a></li>
@@ -41,141 +41,163 @@
 		<section class="way">
 			<div style="width:1155px;">
 				<div>
-					<p><a href="#">Главная / </a><a href="#">Каталог / </a><a href="#">Моноблоки и ноутбуки</a></p>
+					<p><a href="index.html">Главная / </a><a href="#">Каталог / </a><a href="#">Моноблоки и ноутбуки</a></p>
 				</div>
 				<div>
 					<h1>Моноблоки и ноутбуки</h1>
 				</div>
 			</div>
 		</section>
-		<div class="profuctsAndFilter">
-			<section class="filter">
-						<h2>Фильтр</h2>
-						<form>
-							<fieldset class="price">
-								<h3>Стоимость</h3>
-								<input type="range">
-							</fieldset>
-							<fieldset class="maker">
-								<h3>Производители</h3>
-								<ul>
-									<li>
-										<label>
-										<input name="makers" type="checkbox">
-											Lenovo
-										</label>
-									</li>
-									<li>
-										<label>
+		<section class="mainBody">
+			<div class="profuctsAndFilter">
+				<section class="filter">
+							<h2>Фильтр</h2>
+							<form>
+								<fieldset class="Sum">
+									<h3>Стоимость</h3>
+									<input type="range">
+								</fieldset>
+								<fieldset class="maker">
+									<h3>Производители</h3>
+									<ul>
+										<li>
+											<label>
 											<input name="makers" type="checkbox">
-											Philips
-										</label>
-									</li>
-									<li>
-										<label>
-											<input name="makers" type="checkbox" checked>
-											Acer
-										</label>
-									</li>
-									<li>
-										<label>
-											<input name="makers" type="checkbox" checked>
-											HP
-										</label>
-									</li>
-								</ul>
-							</fieldset>
-							<fieldset class="video_card">
-								<h3>Видеокарта</h3>
-								<ul>
-									<li>
-										<label>
-										<input name="video_cards" type="radio" checked>
-											NVidia
-										</label>
-									</li>
-									<li>
-										<label>
-											<input name="video_cards" type="radio">
-											AMD
-										</label>
-									</li>
-									<li>
-										<label>
-											<input name="video_cards" type="radio">
-											Встроенная
-										</label>
-									</li>
-								</ul>
-							</fieldset>
-							<fieldset class="filter_on-off">
-								<input type="submit" value="Применить">
-								<input type="reset" value="Cбросить фильтр">
-							</fieldset>
-						</form>
+												Lenovo
+											</label>
+										</li>
+										<li>
+											<label>
+												<input name="makers" type="checkbox">
+												Philips
+											</label>
+										</li>
+										<li>
+											<label>
+												<input name="makers" type="checkbox" checked>
+												Acer
+											</label>
+										</li>
+										<li>
+											<label>
+												<input name="makers" type="checkbox" checked>
+												HP
+											</label>
+										</li>
+									</ul>
+								</fieldset>
+								<fieldset class="video_card">
+									<h3>Видеокарта</h3>
+									<ul>
+										<li>
+											<label>
+											<input name="video_cards" type="radio" checked>
+												NVidia
+											</label>
+										</li>
+										<li>
+											<label>
+												<input name="video_cards" type="radio">
+												AMD
+											</label>
+										</li>
+										<li>
+											<label>
+												<input name="video_cards" type="radio">
+												Встроенная
+											</label>
+										</li>
+									</ul>
+								</fieldset>
+								<fieldset class="filter_on-off">
+									<input type="submit" value="Применить">
+									<input type="reset" value="Cбросить фильтр">
+								</fieldset>
+							</form>
 
-			</section>
+				</section>
 
-			<section class="content">
+				<section class="content">
 
-				<div class="content-item1">
-					<h2>Сортировка</h2>
-					<ul>
-						<li><a href="#">По цене</a></li>
-						<li><a href="#">По типу</a></li>
-						<li><a href="#">По популярности</a></li>
+					<div class="content-item1">
+						<h2>Сортировка</h2>
+						<ul>
+							<li><a href="#">По цене</a></li>
+							<li><a href="#">По типу</a></li>
+							<li><a href="#">По популярности</a></li>
+						</ul>
+					</div>
+					<div class="content-item2">
+						<div class="noutbook-acer product">
+							<p class="inStock">В наличии</p>
+							<!--Фоновая картинка через css-->
+							<h3>Ноутбук ACER</h3>
+							<div class="priceBlock">
+								<div>
+									<button>-</button>
+									<input id="Acer" type="text" placeholder="0">
+									<button>+</button>
+								</div>
+									<p><span class="price">11020</span> руб</p>
+							</div>
+							<a href="#">В корзину</a>
+						</div>
+						<div class="noutbook-apple product">
+							<p class="inStock">В наличии</p>
+							<!--Фоновая картинка через css-->
+							<h3>Ноутбук Apple</h3>
+							<div class="priceBlock">
+								<div>
+									<button>-</button>
+									<input id="Apple" type="text" placeholder="0">
+									<button>+</button>
+								</div>
+									<p><span class="price">11020</span> руб</p>
+							</div>
+							<a href="#">В корзину</a>
+						</div>
+						<div class="noutbook-hp_pavillion product">
+							<p class="inStock">В наличии</p>
+							<!--Фоновая картинка через css-->
+							<h3>Ноутбук HP Pavillion</h3>
+							<div class="priceBlock">
+								<div>
+									<button>-</button>
+									<input id="HP_pavillion" type="text" placeholder="0">
+									<button>+</button>
+								</div>
+								<p><span class="price">11020</span> руб</p>
+							</div>
+							<a href="#">В корзину</a>
+						</div>
+						<div class="noutbook-hp_pavillion_6 product">
+							<p class="inStock">В наличии</p>
+							<!--Фоновая картинка через css-->
+							<h3>Ноутбук HP Pavillion 6</h3>
+							<div class="priceBlock">
+								<div>
+									<button>-</button>
+									<input id="HP_pavillion_6" type="text" placeholder="0">
+									<button>+</button>
+								</div>
+									<p><span class="price">11020</span> руб</p>
+							</div>
+							<a href="#">В корзину</a>
+						</div>
+					</div>
+					<div class="page_number">
+					<ul class="productsList">
+						<li><a href="#" class="back">Предыдущая</a></li>
+						<li><a href="#" style="border-color:#ebbb4d;color:#ebbb4d;" class="number">1</a></li>
+						<li><a href="#" class="number">2</a></li>
+						<li><a href="#" class="number">3</a></li>
+						<li><a href="#" class="next">Следующая</a></li>
 					</ul>
 				</div>
-				<div class="content-item2">
-					<div class="noutbook-acer">
-						<p>В наличии</p>
-						<!--Фоновая картинка через css-->
-						<h3>Ноутбук ACER</h3>
-						<button>-</button>
-						<input>
-						<button>+</button>
-						<a>В корзину</a>
-					</div>
-					<div class="noutbook-apple">
-						<p>В наличии</p>
-						<!--Фоновая картинка через css-->
-						<h3>Ноутбук Apple</h3>
-						<button>-</button>
-						<input>
-						<button>+</button>
-						<a>В корзину</a>
-					</div>
-					<div class="noutbook-hp_pavillion">
-						<p>В наличии</p>
-						<!--Фоновая картинка через css-->
-						<h3>Ноутбук HP Pavillion</h3>
-						<button>-</button>
-						<input>
-						<button>+</button>
-						<a>В корзину</a>
-					</div>
-					<div class="noutbook-hp_pavillion_6">
-						<p>В наличии</p>
-						<!--Фоновая картинка через css-->
-						<h3>Ноутбук HP Pavillion 6</h3>
-						<button>-</button>
-						<input>
-						<button>+</button>
-						<a>В корзину</a>
-					</div>
-				</div>
-				<div class="page_number">
-				<ul>
-					<li>Предыдущая</li>
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>Следующая</li>
-				</ul>
-			</div>
 
+			</section>
+			</div>
 		</section>
-		</div>
 	</main>
 	<footer>
 		<div class="wrapperSupFooter">
