@@ -242,7 +242,10 @@ main{
     position:absolute;
     margin-top:350px;
     margin-left:460px;
-   display:inline-flex;
+    display:inline-flex;
+}
+.slaider-control-switches-1 div{
+    margin:0 5px 0 5px;
 }
 input[type=radio]:checked + .slide{
     order: 1;
@@ -595,34 +598,146 @@ footer{
 .way{
     display:flex;
     justify-content: center;
+    border-bottom:1px solid #d1d1d1;
 }
 .mainBody{/*центровщик*/
     display:flex;
     justify-content: center;
 }
+.wayWrapper{
+    width:1155px;
+}
+.wayWrapper a{
+    color:#3c3c3c;
+    opacity:0.62;
+    font-size:14pt;
+}
+.wayWrapper hr{
+    border:1px solid #d1d1d1;
+}
 /*Фильтр*/
 .filter{
     width:360px;
+    color:#ffffff;
 }
 .filter h2{
     margin:0;
-    padding:19px 0 19px 0;
+    padding:19px 0 19px 25px;
     background-color: #3c3c3c;
+
 }
 fieldset{
     border:none;
     border-bottom:1px solid #4d4d4d;
     background-color: #606060;
 }
+fieldset label{
+    color:#e9b637;
+    position: relative;
+}
+fieldset input[type=checkbox],fieldset input[type=radio]{
+    display: none;
+}
+input[type=checkbox] + label:before{
+    position:absolute;
+    top:0;
+    left:-25px;
+    content:url("../image/checkbox.png");
+}
+input[type=checkbox]:checked + label:before{
+    position:absolute;
+    content:url("../image/checkboxCh.png");
+}
+input[type=radio] + label:before{
+    position:absolute;
+    top:3px;
+    left:-25px;
+    content:url("../image/rdnbtn.png");
+}
+input[type=radio]:checked + label:before{
+    position:absolute;
+    content:url("../image/rdnbtnCh.png");
+}
+.maker ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top:35px;
+}
+.maker li{
+    width:60px;
+    margin:0 80px 20px 0;
+
+}
+.video_card ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top:35px;
+}
+.video_card li{
+    width:60px;
+    margin:0 80px 20px 0;
+
+}
+.filter h3{
+    padding-left:15px;
+}
+.filterOnOff div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:20px 0 0 0;
+}
+.accept{
+    padding:20px 0 20px 0;
+    width:288px;
+    background: #e9b637;
+    border:none;
+    font-size: 14pt;
+    color:#3c3c3c;
+}
+.reset{
+    background: none;
+    border:none;
+    color:#b9b9b9;
+    margin-top:12px;
+}
 /*конец Фильтр*/
 /*Контент*/
 .content{
 width:820px;
 }
+
+/*Сортировка*/
 .content-item1{
     background-color: #f0f0f0;
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+.content-item1 div{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right:35px;
+}
+.content-item1 div a{
+    margin-left:5px;
+    text-align:center;
+    border:1px solid #dddddd;
+    width:25px;
+    height:22px;
+}
+.content-item1 div a:active{
+    color:#e9b638;
+}
+.ascending{
+    color:#e9b638;
+}
+.content-item1 h2{
+    margin-left:40px;
 }
 .content-item1 ul{
     display:flex;
@@ -631,7 +746,21 @@ width:820px;
 }
 .content-item1 li{
     padding-right:25px;
+    font-size: 9.72pt;
 }
+.content-item1 li a{
+    color:#8b8b8b;
+    font-weight: bold;
+}
+.content-item1 li a:hover{
+    color:#3b3b3b;
+}
+.content-item1 li a:active{
+    color:#3b3b3b;
+}
+/*конец Сортировка*/
+
+/*Товары*/
 .content-item2{
     display: flex;
     flex-direction: row;
@@ -710,6 +839,8 @@ button{
     padding:11px;
     border:1px solid #cdcccc;
 }
+/*конец Товары*/
+
 /*конец Контент*/
 .number{
     margin-right: 8px;
@@ -744,5 +875,9 @@ button{
     display: flex;
     justify-content: center;
     flex-direction: row;
+}
+.productsList a:active{
+    border-color:#ebbb4d;
+    color:#ebbb4d;
 }
 /*конец main 2-page*/

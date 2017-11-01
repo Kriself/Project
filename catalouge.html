@@ -39,15 +39,17 @@
 	</header>
 	<main>
 		<section class="way">
-			<div style="width:1155px;">
+			<div class="wayWrapper">
 				<div>
 					<p><a href="index.html">Главная / </a><a href="#">Каталог / </a><a href="#">Моноблоки и ноутбуки</a></p>
 				</div>
-				<div>
-					<h1>Моноблоки и ноутбуки</h1>
-				</div>
 			</div>
 		</section>
+		<div style="display: flex; justify-content: center;">
+			<div style="width: 1155px;">
+				<h1>Моноблоки и ноутбуки</h1>
+			</div>
+		</div>
 		<section class="mainBody">
 			<div class="profuctsAndFilter">
 				<section class="filter">
@@ -55,32 +57,34 @@
 							<form>
 								<fieldset class="Sum">
 									<h3>Стоимость</h3>
-									<input type="range">
+									<label>
+										<input type="range">
+									</label>
 								</fieldset>
 								<fieldset class="maker">
 									<h3>Производители</h3>
 									<ul>
 										<li>
-											<label>
-											<input name="makers" type="checkbox">
+											<input id="makers1" name="makers" type="checkbox">
+											<label for="makers1">
 												Lenovo
 											</label>
 										</li>
 										<li>
-											<label>
-												<input name="makers" type="checkbox">
+											<input id="makers2" name="makers" type="checkbox">
+											<label for="makers2">
 												Philips
 											</label>
 										</li>
 										<li>
-											<label>
-												<input name="makers" type="checkbox" checked>
+											<input id="makers3" name="makers" type="checkbox" checked>
+											<label for="makers3">
 												Acer
 											</label>
 										</li>
 										<li>
-											<label>
-												<input name="makers" type="checkbox" checked>
+											<input id="makers4" name="makers" type="checkbox" checked>
+											<label for="makers4">
 												HP
 											</label>
 										</li>
@@ -90,28 +94,30 @@
 									<h3>Видеокарта</h3>
 									<ul>
 										<li>
-											<label>
-											<input name="video_cards" type="radio" checked>
+											<input id="vcard1" name="video_cards" type="radio" checked>
+											<label for="vcard1">
 												NVidia
 											</label>
 										</li>
 										<li>
-											<label>
-												<input name="video_cards" type="radio">
+											<input id="vcard2" name="video_cards" type="radio">
+											<label for="vcard2">
 												AMD
 											</label>
 										</li>
 										<li>
-											<label>
-												<input name="video_cards" type="radio">
+											<input id="vcard3" name="video_cards" type="radio">
+											<label for="vcard3">
 												Встроенная
 											</label>
 										</li>
 									</ul>
 								</fieldset>
-								<fieldset class="filter_on-off">
-									<input type="submit" value="Применить">
-									<input type="reset" value="Cбросить фильтр">
+								<fieldset class="filterOnOff">
+									<div>
+										<input class="accept" type="submit" value="Применить">
+										<input class="reset" type="reset" value="Cбросить фильтр">
+									</div>
 								</fieldset>
 							</form>
 
@@ -120,12 +126,17 @@
 				<section class="content">
 
 					<div class="content-item1">
-						<h2>Сортировка</h2>
+						<h2>СОРТИРОВКА</h2>
 						<ul>
-							<li><a href="#">По цене</a></li>
-							<li><a href="#">По типу</a></li>
-							<li><a href="#">По популярности</a></li>
+							<li><a href="#">ПО ЦЕНЕ</a></li>
+							<li><a href="#">ПО ТИПУ</a></li>
+							<li><a href="#">ПО ПОПУЛЯРОНОСТИ</a></li>
 						</ul>
+						<div>
+							<a href="#" class="ascending arrow">↑</a>
+							<a href="#" class="descending arrow">↓</a>
+						</div>
+
 					</div>
 					<div class="content-item2">
 						<div class="noutbook-acer product">
