@@ -10,7 +10,7 @@
         <header>
 			<nav>
 				<div class="wrapperSupMenu">
-					<ul class="sup-menu">
+					<ul class="sup-menu  wrapper">
 						<li class="logo"><a><img src="image/logo.png" alt="MAGNO"></a></li>
 						<li><a href="tel:+79000000000" class="phone">+7 900 000 00 00</a></li>
 						<li><form><input type="search" placeholder="Поиск по сайту" id="searchOnSite"><label for="searchOnSite"></label></form></li>
@@ -18,7 +18,7 @@
 						<li><a href="#" class="basket">Корзина</a></li>
 					</ul>
 				</div>
-				<div class="wrapperSubMenu">
+				<div class="wrapperSubMenu wrapper">
 					<ul class="sub-menu">
 						<li class="categories"><a href="#" class="pluss">Все категории</a>
 							<ul>
@@ -38,12 +38,12 @@
 			</nav>
 		</header>
 		<main>
-			<section class="slaider-1">
+			<section class="slaider-1 wrapper">
 				<div class="slaider1-main">
 					<div class="slaider-control-switches-1">
-						<div><label for="slaider1-1"> </label></div>
-						<div><label for="slaider1-2"> </label></div>
-						<div><label for="slaider1-3"> </label></div>
+						<div><label for="slaider1-1">  </label></div>
+						<div><label for="slaider1-2">  </label></div>
+						<div><label for="slaider1-3">  </label></div>
 					</div>
 					<input id="slaider1-1" name="slaider1" type="radio">
 					<div class="slaider1-slaid-1 slide">
@@ -78,9 +78,9 @@
 				</div>
 			</section>
 			<hr>
-			<section class="catalog">
+			<section class="catalog wrapper">
 				<h2 style="display: none">Каталог</h2>
-			    <ul class="products">
+			    <ul id="catalog" class="products ">
 					<li><a href="catalouge.html"><div><img src="image/monoblocs_and_laptops.png" alt="МОНОБЛОКИ И НОУТБУКИ"></div><br>МОНОБЛОКИ И НОУТБУКИ</a></li>
 					<li><a href="#"><div><img src="image/periphery.png" alt="ПЕРИФЕРИЯ"></div><br>ПЕРИФЕРИЯ</a></li>
 					<li><a href="#"><div><img src="image/accessories.png" alt="КОМПЛЕКТУЮЩИЕ"></div><br>КОМПЛЕКТУЮЩИЕ</a></li>
@@ -133,7 +133,7 @@
 				</div>
 			</section>
 			<hr>
-			<section class="brends">
+			<section class="brends wrapper">
 				<h2 style="display: none">Бренды</h2>
 				<ul>
 					<li><a href="#"><img src="image/brand1.png" alt="schneider elrctric"></a></li>
@@ -146,7 +146,7 @@
 					<li><a href="#"><img src="image/brand8.png" alt="cct"></a></li>
 				</ul>
 			</section>
-			<section class="about-us">
+			<section class="about-us wrapper">
 				<div class="about-us-info">
 					<h2>НАША КОМПАНИЯ</h2>
 					<hr class="about-us-decLine">
@@ -213,5 +213,30 @@
 				</div>
 			</div>
 		</footer>
+		<div class="authorization">
+			<form>
+				<h2>личный кабинет</h2>
+				<label>введите пожалуйства свой логин и пароль</label>
+				<input name="login">
+				<input name="password">
+				<label>запомните меня</label>
+				<input type="checkbox" name="remember_me">
+				<a href="#">Я забыл пароль!</a>
+				<input type="button" value="войти">
+
+			</form>
+		</div>
+		<div class="write_us">
+			<form>
+				<label>Ваше имя:</label>
+				<input name="name">
+				<label>Ваш e-mail:</label>
+				<input name="e-mail">
+				<label>Текст письма:</label>
+				<input type="text-area" name="letter">
+				<a href="#">отправить</a>
+			</form>
+		</div>
+		<script src="js/js.js"></script>
     </body>
 </html>

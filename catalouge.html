@@ -10,7 +10,7 @@
 	<header>
 		<nav>
 			<div class="wrapperSupMenu">
-				<ul class="sup-menu">
+				<ul class="sup-menu wrapper">
 					<li class="logo"><a href="index.html"><img src="image/logo.png" alt="MAGNO"></a></li>
 					<li><a href="tel:+79000000000" class="phone">+7 900 000 00 00</a></li>
 					<li><form><input type="search" placeholder="Поиск по сайту" id="searchOnSite"><label for="searchOnSite"></label></form></li>
@@ -18,7 +18,7 @@
 					<li><a href="#" class="basket">Корзина</a></li>
 				</ul>
 			</div>
-			<div class="wrapperSubMenu">
+			<div class="wrapperSubMenu wrapper">
 				<ul class="sub-menu">
 					<li class="categories"><a href="#" class="pluss">Все категории</a>
 						<ul>
@@ -38,10 +38,11 @@
 		</nav>
 	</header>
 	<main>
-		<section class="way">
+		<section class="way wrapper">
+			<h2 style="display: none">way</h2>
 			<div class="wayWrapper">
 				<div>
-					<p><a href="index.html">Главная / </a><a href="#">Каталог / </a><a href="#">Моноблоки и ноутбуки</a></p>
+					<p><a href="index.html">Главная / </a><a href="index.html#catalog">Каталог / </a><a href="#">Моноблоки и ноутбуки</a></p>
 				</div>
 			</div>
 		</section>
@@ -50,16 +51,20 @@
 				<h1>Моноблоки и ноутбуки</h1>
 			</div>
 		</div>
-		<section class="mainBody">
+		<section class="mainBody wrapper">
+			<h2 style="display: none">mainBody</h2>
 			<div class="profuctsAndFilter">
 				<section class="filter">
 							<h2>Фильтр</h2>
-							<form>
+							<form id="filter">
 								<fieldset class="Sum">
 									<h3>Стоимость</h3>
-									<label>
-										<input type="range">
-									</label>
+									<div class="range">
+										<div class="progressBar">
+											<div class="min"></div>
+											<div class="max"></div>
+										</div>
+									</div>
 								</fieldset>
 								<fieldset class="maker">
 									<h3>Производители</h3>
@@ -116,7 +121,7 @@
 								<fieldset class="filterOnOff">
 									<div>
 										<input class="accept" type="submit" value="Применить">
-										<input class="reset" type="reset" value="Cбросить фильтр">
+										<input form="filter" class="reset" type="reset" value="Cбросить фильтр">
 									</div>
 								</fieldset>
 							</form>
