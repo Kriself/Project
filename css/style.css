@@ -8,7 +8,8 @@ a{
     text-decoration:none;
 }
 hr{
-    margin:40px 0 40px 0;
+    width:1160px;
+    margin:40px auto 40px auto;
     border: 1px solid #d1d1d1;
 }
 @font-face {
@@ -17,8 +18,6 @@ hr{
 }
 /*Меню*/
 .wrapperSupMenu{
-    /*display:flex;*/
-    /*justify-content: center;*/
     background-color: #3c3c3c;
 }
 
@@ -110,8 +109,6 @@ hr{
     height:15px;
 }
 .wrapperSubMenu{
-    display:flex;
-    justify-content: center;
     background-color: #f0f0f0;
 }
 .sub-menu{
@@ -126,6 +123,7 @@ hr{
     flex-wrap:nowrap;
     font-weight: bold;
     font-size:16pt;
+    background-color: #f0f0f0;
 }
 .sub-menu li{
     width:100px;
@@ -326,11 +324,6 @@ input[type=radio]:checked + .slide{
 .slaider-2 input{
     display:none;
 }
-.slaider-2{
-    display:flex;
-    margin-left:65px;
-    justify-content: center;
-}
 .slaider2-main{/*Отцентровывает*/
     width:1200px;
     display:flex;
@@ -340,7 +333,8 @@ input[type=radio]:checked + .slide{
     display:flex;
     flex-direction:column;
     justify-content: space-around;
-    padding-right:50px;
+    padding-right:25px;
+    margin-right:25px;
     height:190px;
     border-right:1px solid #d1d1d1;
 }
@@ -520,15 +514,14 @@ footer{
 
 /*Верхний футер*/
 .wrapperSupFooter{
-    display:flex;
-    justify-content: center;
+    width:100%;
     background-color: #464646;
 }
 .sup-footer{
     width:1180px;
     display:flex;
-    flex-direction:row;
     justify-content: space-between;
+    background-color: #464646;
 }
 .footer-LogoAddress{
     width:300px;
@@ -577,8 +570,6 @@ footer{
 
 /*Нижний футер*/
 .wrapperSubFooter{
-    display:flex;
-    justify-content: center;
     background-color: #3c3c3c;
 }
 .sub-footer{
@@ -586,6 +577,7 @@ footer{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+    background-color: #3c3c3c;
 }
 .sub-footer p{
     color:white;
