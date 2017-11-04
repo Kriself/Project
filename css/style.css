@@ -14,7 +14,7 @@ hr{
 }
 @font-face {
     font-family:Century Gothic;
-    src:url(/fonts/CENTURY.TTF);
+    src:url(/fonts/GOTHIC.TTF);
 }
 /*Меню*/
 .wrapperSupMenu{
@@ -24,7 +24,6 @@ hr{
 .wrapper {
     width: 1160px;
     margin: 0 auto;
-
 }
 .sup-menu{
     padding-top:10px;
@@ -71,18 +70,7 @@ hr{
     border: 1px solid white;
     padding:8px 0 9px 14px;
     color:#989898;
-}
-.sup-menu label{
-    position: relative;
-}
-.sup-menu label:before{
-    content:' ';
-    background-image: url(../image/search.png);
-    position:absolute;
-    top:2px;
-    left: -20px;
-    width:11px;
-    height:11px;
+    background: url(../image/search.png) no-repeat 95% 50%;
 }
 .basket{
     position: relative;
@@ -191,8 +179,7 @@ main{
     padding:0 0 0 100px;
     display: flex;
     overflow: hidden;
-    box-shadow: 6px 6px 20px 0px #c1c1c1;
-
+    box-shadow: 6px 6px 20px 0 #c1c1c1;
 }
 /*Слайды первого слайдера*/
 .slaider1-slaid-1{/*Слайд 1*/
@@ -420,38 +407,37 @@ input[type=radio]:checked + .slide2{
     border:3px solid #e9b637;
 }
 .about-us-info{
+    position: relative;
     font-size:16pt;
     width:695px;
     background-color: #e7e7e7;
-    padding-left:50px;
+    padding-left:40px;
+    padding-right:30px;
+    color: #8c8c8c;
 }
 .about-us-info h2{
     font-size:21pt;
     margin-top:60px;
-}
-.about-us-info p{
-    color: #8c8c8c;
-}
-.about-us-info a:active{
-    color:black;
+    color:#3c3c3c;
 }
 .about-us-info a{
+    color:black;
+    font-size: 18pt;
+    font-weight: bold;
     position: relative;
 }
-.about-us-info a hr{
-    width:250px;
-    border:4px solid #f0c52e;
+.about-us-info a p{
+    padding-left:25px;
 }
-.about-us-info a::before{
-    z-index:1;
+.about-us-info a:before{
     color:black;
+    top:13px;
+    left:-10px;
     position:absolute;
-    top:10px;
-    left:40px;
-    content:'НАПИШИТЕ НАМ';
-    width:180px;
-    height:10px;
-    font-size:16pt;
+    background: #e9b637;
+    width:260px;
+    height:8px;
+    content: '';
 }
 .about-us-info li{
     color: #8c8c8c;
@@ -591,7 +577,19 @@ footer{
     padding-right:5px;
 }
 /*конец Нижний футер*/
-
+.authorization{
+    padding:50px 80px 50px 80px;
+    position: fixed;
+    top:25%;
+    left:25%;
+    height:285px;
+    width:300px;
+    background: #f7f4f1;
+}
+.authorization form{
+    display: flex;
+    flex-direction: column;
+}
 /*конец footer*/
 /***************************************/
 /*               2 СТРАНИЦА            */
