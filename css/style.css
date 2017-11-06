@@ -14,7 +14,13 @@ hr{
 }
 @font-face {
     font-family:Century Gothic;
-    src:url(/fonts/GOTHIC.TTF);
+    src:url(/fonts/GOTHIC.TTF) format('ttf');}
+@font-face {
+    font-family: pt_sans_narrowbold;
+    src: url('/fonts/2220-webfont.woff2') format('woff2'),
+    url('/fonts/2220-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 /*Меню*/
 .wrapperSupMenu{
@@ -244,9 +250,6 @@ main{
 }
 input[type=radio]:checked + .slide{
     order: 1;
-}
-.slaider-control-switches-1 div:active{
-    background: white;
 }
 
 .more_detailed{
@@ -578,17 +581,74 @@ footer{
 }
 /*конец Нижний футер*/
 .authorization{
-    padding:50px 80px 50px 80px;
-    position: fixed;
-    top:25%;
-    left:25%;
+    padding:50px 80px 60px 80px;
     height:285px;
     width:300px;
     background: #f7f4f1;
+    font-size: 10pt;
+    box-shadow: 0 11px 50px 0 #505151;
+}
+.modal-menu{
+    display:none;
+    position: fixed;
+    top:25%;
+    left:25%;
+    align-items: flex-start;
+}
+.authorization h2{
+    font-size: 20pt;
+    margin:0;
+}
+.authorization a{
+    text-decoration: underline;
+    color:black;
+}
+.authorization div{
+    margin:10px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.authorization div input{
+    display:none;
+}
+.authorization label{
+    position: relative;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+input[name="remember_me"] + label:before{
+    position:absolute;
+    top:-2px;
+    left:-20px;
+    content:url("../image/RmmMe.png");
+}
+input[name="remember_me"]:checked + label:before{
+    position:absolute;
+    content:url("../image/RmmMeChk.png");
 }
 .authorization form{
     display: flex;
     flex-direction: column;
+}
+.data{
+    width:266px;
+    border:2px solid black;
+    height:9px;
+    padding:15px;
+    font-size: 14pt;
+    margin-bottom: 10px;
+    color:black;
+    background: #f9f6f3;
+}
+.logIn{
+    padding:16px 0 17px 0;
+    width:300px;
+    background: black;
+    border:none;
+    color:white;
+}
+.show{
+    display:flex;
 }
 /*конец footer*/
 /***************************************/
@@ -644,23 +704,23 @@ fieldset label{
 fieldset input[type=checkbox],fieldset input[type=radio]{
     display: none;
 }
-input[type=checkbox] + label:before{
+input[name="makers"] + label:before{
     position:absolute;
     top:0;
     left:-25px;
     content:url("../image/checkbox.png");
 }
-input[type=checkbox]:checked + label:before{
+input[name="makers"]:checked + label:before{
     position:absolute;
     content:url("../image/checkboxCh.png");
 }
-input[type=radio] + label:before{
+input[name="video_cards"] + label:before{
     position:absolute;
     top:3px;
     left:-25px;
     content:url("../image/rdnbtn.png");
 }
-input[type=radio]:checked + label:before{
+input[name="video_cards"]:checked + label:before{
     position:absolute;
     content:url("../image/rdnbtnCh.png");
 }

@@ -41,9 +41,9 @@
 			<section class="slaider-1 wrapper">
 				<div class="slaider1-main">
 					<div class="slaider-control-switches-1">
-						<div><label for="slaider1-1">  </label></div>
-						<div><label for="slaider1-2">  </label></div>
-						<div><label for="slaider1-3">  </label></div>
+						<div class="circleDec"><label id="l1" for="slaider1-1">  </label></div>
+						<div class="circleDec"><label id="l2" for="slaider1-2">  </label></div>
+						<div class="circleDec"><label id='l3' for="slaider1-3">  </label></div>
 					</div>
 					<input id="slaider1-1" name="slaider1" type="radio">
 					<div class="slaider1-slaid-1 slide">
@@ -213,18 +213,23 @@
 				</div>
 			</div>
 		</footer>
-		<div class="authorization">
-			<form>
-				<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
-				<label>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</label>
-				<input name="login" placeholder="ЛОГИН">
-				<input type="password" name="password" placeholder="ПАРОЛЬ">
-                <div>
-                    <label><input type="checkbox" name="remember_me">ЗАПОМНИТЕ МЕНЯ</label>
-                    <a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
-                </div>
-				<input type="button" value="ВОЙТИ">
-			</form>
+		<div class="modal-menu">
+			<div class="authorization">
+				<form>
+					<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+					<p>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</p>
+					<input class="login data" name="login" placeholder="ЛОГИН">
+					<input class="passWord data" type="password" name="password" placeholder="ПАРОЛЬ">
+					<div>
+						<input id="rememberMe" type="checkbox" checked name="remember_me"><label for="rememberMe">ЗАПОМНИТЕ МЕНЯ</label>
+						<a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+					</div>
+					<input class="logIn" type="button" value="ВОЙТИ">
+				</form>
+			</div>
+			<div class="esc">
+				<img src="image/ESC.png">
+			</div>
 		</div>
 		<div class="write_us">
 			<form>
