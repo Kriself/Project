@@ -162,7 +162,7 @@
 						<li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						Sed ut perspiciatis, unde omnis iste natus error sit</li>
 					</ul>
-                    <a href="#"><p>НАПИШИТЕ НАМ</p></a>
+                    <a id='writeUs'><p>НАПИШИТЕ НАМ</p></a>
 				</div>
 				<div class="spam">
 					<h2>ПОЧТОВАЯ РАССЫЛКА</h2>
@@ -231,16 +231,24 @@
 				<img src="image/ESC.png">
 			</div>
 		</div>
-		<div class="write_us">
-			<form>
-				<label>Ваше имя:</label>
-				<input name="name">
-				<label>Ваш e-mail:</label>
-				<input name="e-mail">
-				<label>Текст письма:</label>
-				<input type="text-area" name="letter">
-				<a href="#">отправить</a>
-			</form>
+		<div class="modal-writeUs">
+
+			<div class="write_us">
+				<form>
+					<label><a>Ваше имя:</a><br>
+						<input placeholder="Представьтесь, пожалуйста" name="name">
+					</label>
+					<label><a>Ваш e-mail:</a><br>
+						<input placeholder="Для отправки ответа" name="e-mail">
+					</label>
+					<label><a>Текст письма:</a><br>
+						<input placeholder="В свободной форме" name="letter">
+					</label>
+					<a class="submit" href="#"><p>ОТПРАВИТЬ</p></a>
+				</form>
+			</div>
+			<div class="close"></div>
+
 		</div>
 		<script src="js/js.js">
 

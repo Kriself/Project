@@ -17,19 +17,40 @@ label3.addEventListener('click',function(){
     cDec[1].style.background='none';
     cDec[2].style.background='white';
 });
+//Вызов Меню авторизации
 var link=document.querySelector('.account');
-var popup=document.querySelector('.modal-menu');
+var popupMenu=document.querySelector('.modal-menu');
 var escp=document.querySelector('.esc');
 link.addEventListener('click', function (evt){
     evt.preventDefault();
-    popup.classList.add('show');
+    popupMenu.classList.add('show');
 });
 window.addEventListener('keydown', function (evt){
     if (evt.keyCode===27) {
-        popup.classList.remove('show');
+        popupMenu.classList.remove('show');
     }
 });
 escp.addEventListener('click', function (evt){
     evt.preventDefault();
-    popup.classList.remove('show');
+    popupMenu.classList.remove('show');
 });
+//конец вызова
+
+//Вызов Напишите нам
+var sub=document.querySelector('#writeUs');
+var close=document.querySelector('.close');
+var popupWriteUs=document.querySelector('.modal-writeUs');
+sub.addEventListener('click', function (evt){
+    evt.preventDefault();
+    popupWriteUs.classList.add('show');
+});
+window.addEventListener('keydown', function (evt){
+    if (evt.keyCode===27) {
+        popupWriteUs.classList.remove('show');
+    }
+});
+close.addEventListener('click', function (evt){
+    evt.preventDefault();
+    popupWriteUs.classList.remove('show');
+});
+//конец Напишите нам

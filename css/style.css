@@ -1,5 +1,5 @@
 body{
-    font-family:"Century Gothic";
+    font-family:"Century Gothic", 'Arial', sans-serif;
 }
 li{
     list-style: none;
@@ -251,7 +251,9 @@ main{
 input[type=radio]:checked + .slide{
     order: 1;
 }
-
+.circleDec:hover{
+    background: white;
+}
 .more_detailed{
     width: 205px;
     padding:15px 55px 15px 55px;
@@ -580,6 +582,10 @@ footer{
     padding-right:5px;
 }
 /*конец Нижний футер*/
+
+/*конец footer*/
+
+/*Авторизация*/
 .authorization{
     padding:50px 80px 60px 80px;
     height:285px;
@@ -594,6 +600,10 @@ footer{
     top:25%;
     left:25%;
     align-items: flex-start;
+}
+.esc{
+    margin-left:10px;
+    cursor: pointer;
 }
 .authorization h2{
     font-size: 20pt;
@@ -647,10 +657,83 @@ input[name="remember_me"]:checked + label:before{
     border:none;
     color:white;
 }
+
+/*конец Авторизации*/
+/*Напишите нам*/
+.modal-writeUs{
+    box-shadow: 0 11px 50px 0 #505151;
+    width:838px;
+    padding:22px 22px 160px 100px;
+    height:391px;
+    position: fixed;
+    top:10%;
+    left:10%;
+    background: white;
+    display:none;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+.modal-writeUs label{
+    font-size:14pt;
+    font-weight:bold;
+}
+.modal-writeUs p{
+    margin: 42px 0 13px 0;
+}
+.close{
+    border-radius:50px;
+    height:55px;
+    width:55px;
+    background: url("../image/close.png") no-repeat center #e9b637;
+}
+.write_us{
+    margin-top:25px;
+}
+.write_us form{
+    margin-top:36px;
+    width:760px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.write_us input{
+    width:340px;
+    height:50px;
+    padding-left:20px;
+    background: #f2f2f2;
+    border:none;
+    margin:13px 0 42px 0;
+}
+.write_us input[name='letter']{
+    height:155px;
+    width:740px;
+}
+.submit{
+    margin-top:13px;
+    color:black;
+    position: relative;
+}
+.submit p{
+    margin:0;
+    order:2;
+    position: relative;
+    left:35px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+.submit:before{
+    color:black;
+    top:11px;
+    position:absolute;
+    background: #e9b637;
+    width:200px;
+    height:8px;
+    content: '';
+}
+/*конец Напишите нам*/
 .show{
     display:flex;
 }
-/*конец footer*/
 /***************************************/
 /*               2 СТРАНИЦА            */
 /***************************************/
