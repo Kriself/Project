@@ -22,10 +22,14 @@ label3.addEventListener('click',function(){
 //конец Слайдер
 
 //Вызов Меню авторизации
-var link=document.querySelector('.account');
+var link=document.querySelectorAll('.account');
 var popupMenu=document.querySelector('.modal-menu');
 var escp=document.querySelector('.esc');
-link.addEventListener('click', function (evt){
+link[0].addEventListener('click', function (evt){
+    evt.preventDefault();
+    popupMenu.classList.add('show');
+});
+link[1].addEventListener('click', function (evt){
     evt.preventDefault();
     popupMenu.classList.add('show');
 });

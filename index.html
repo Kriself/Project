@@ -5,6 +5,9 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/normalize.css" type="text/css">
 		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+		</style>
     </head>
     <body>
         <header>
@@ -13,7 +16,7 @@
 					<ul class="sup-menu wrapper">
 						<li class="logo"><a><img src="image/logo.png" alt="MAGNO"></a></li>
 						<li><a href="tel:+79000000000" class="phone">+7 900 000 00 00</a></li>
-						<li><form><input type="search" placeholder="Поиск по сайту" id="searchOnSite"></form></li>
+						<li><form><input type="search" placeholder="Поиск по сайту" id="searchOnSite"><a class="search"></a></form></li>
 						<li><a href="#" class="account">Личный кабинет</a></li>
 						<li><a href="#" class="basket">Корзина</a></li>
 					</ul>
@@ -169,7 +172,7 @@
 					<hr class="spam-decLine">
 					<p>Узнавайте первым о новостях, акциях и скидках интернет-магазина</p>
 					<form>
-						<input name="email" type="email" class="e-mail" placeholder="Ваш E-mail">
+						<input name="email" id="email" type="email" class="e-mail" placeholder="Ваш E-mail">
 					</form>
 					<p class="spam-info">Указанная информация не будет передана третьим лицам. Вы можете отписаться от почтовой рассылки в любое время</p>
 					<input type="submit" value="Подписаться" class="subscribe">
@@ -205,33 +208,33 @@
 				<div class="sub-footer wrapper">
 					<p>Все права защищены 2017</p>
 					<ul>
-						<li><a href="#"><img src="image/VK.png" alt="vk"></a></li>
-						<li><a href="#"><img src="image/facebook.png" alt="facebook"></a></li>
-						<li><a href="#"><img src="image/Twitter.png" alt="twitter"></a></li>
-						<li><a href="#"><img src="image/mail.png" alt="mail.ru"></a></li>
+						<li class='vk'></li>
+						<li class='facebook'></li>
+						<li class='twitter'></li>
+						<li class='mailru'></li>
 					</ul>
 				</div>
 			</div>
 		</footer>
-		<div class="modal-menu">
-			<div class="authorization">
-				<form>
-					<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
-					<p>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</p>
-					<input class="login data" name="login" placeholder="ЛОГИН">
-					<input class="passWord data" type="password" name="password" placeholder="ПАРОЛЬ">
-					<div>
-						<input id="rememberMe" type="checkbox" checked name="remember_me"><label for="rememberMe">ЗАПОМНИТЕ МЕНЯ</label>
-						<a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
-					</div>
-					<input class="logIn" type="button" value="ВОЙТИ">
-				</form>
+			<div class="modal-menu">
+				<div class="authorization">
+					<form>
+						<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+						<p>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</p>
+						<input class="login data" name="login" placeholder="ЛОГИН">
+						<input class="passWord data" type="password" name="password" placeholder="ПАРОЛЬ">
+						<div>
+							<input id="rememberMe" type="checkbox" checked name="remember_me"><label for="rememberMe">ЗАПОМНИТЕ МЕНЯ</label>
+							<a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+						</div>
+						<input class="logIn" type="button" value="ВОЙТИ">
+					</form>
+				</div>
+				<div class="esc">
+					<img src="image/ESC.png">
+				</div>
 			</div>
-			<div class="esc">
-				<img src="image/ESC.png">
-			</div>
-		</div>
-		<div class="modal-writeUs">
+			<div class="modal-writeUs">
 
 			<div class="write_us">
 				<form>
@@ -250,7 +253,7 @@
 			<div class="close"></div>
 
 		</div>
-		<script src="js/jsMainPage.js">
+		<script src="js/jsmainpage.js">
 
 		</script>
     </body>
