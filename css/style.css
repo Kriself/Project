@@ -37,7 +37,7 @@ input{
     margin-top:0;
     margin-bottom:0;
     padding-left:0;
-    width:1180px;
+    width:1160px;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -209,7 +209,7 @@ input[type="search"]{
     -webkit-box-direction:normal;
         -ms-flex-direction:row;
             flex-direction:row;
-    width:1180px;
+    width:1160px;
     -webkit-box-pack:center;
         -ms-flex-pack:center;
             justify-content:center;
@@ -240,6 +240,7 @@ input[type="search"]{
     -webkit-box-flex:1;
         -ms-flex-positive:1;
             flex-grow:1;
+    z-index:100;
 }
 .pluss{
     position: relative;
@@ -260,7 +261,10 @@ input[type="search"]{
     width:600px;
     -ms-flex-wrap:wrap;
         flex-wrap:wrap;
-    padding:0;
+    padding:0 580px 0 150px;
+    height:140px;
+    left:0;
+    position:absolute;
 }
 .allCat li{
     width:auto;
@@ -270,6 +274,9 @@ input[type="search"]{
 }
 .allCat a{
     color:#6d5b5b;
+}
+.categories:hover ul{
+    display:flex;
 }
 /*конец Категории*/
 
@@ -308,7 +315,7 @@ main{
 .slaider1-slaid-1{/*Слайд 1*/
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    width:1200px;
+    width:1160px;
     height:385px;
     margin:0;
     background: url(../image/3_image_main_slider.png) no-repeat 70% 50%;
@@ -316,7 +323,7 @@ main{
 .slaider1-slaid-2{
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    width:1200px;
+    width:1160px;
     height:385px;
     margin:0;
     background: url(../image/2_image_main_slider.png) no-repeat 80% 50%;
@@ -324,7 +331,7 @@ main{
 .slaider1-slaid-3{
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    width:1200px;
+    width:1160px;
     height:385px;
     margin:0;
     background: url(../image/1_image_main_slider.png) no-repeat 80% 50%;
@@ -429,7 +436,7 @@ input[type=radio]:checked + .slide{
 }
 .products{
     padding-left:0;
-    width:1180px;
+    width:1160px;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -453,16 +460,19 @@ input[type=radio]:checked + .slide{
 .hovItem{
     -webkit-filter: brightness(0%) invert(1);
             filter: brightness(0%) invert(1);
-
 }
 /*конец Каталог*/
 
 /*Слайдер 2*/
+.slider2{
+    display:flex;
+    justify-content: center;
+}
 .slaider-2 input{
     display:none;
 }
 .slaider2-main{/*Отцентровывает*/
-    width:1200px;
+    width:1160px;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -477,10 +487,10 @@ input[type=radio]:checked + .slide{
         -ms-flex-direction:column;
             flex-direction:column;
     -ms-flex-line-pack: distribute;
-        justify-content: space-around;
-    padding-right:25px;
-    margin-right:25px;
-    height:190px;
+        justify-content: space-between;
+    padding:25px 50px 25px 0;
+    margin-right:50px;
+    height:220px;
     border-right:1px solid #d1d1d1;
 }
 .slaider-control-switches-2 label{
@@ -532,7 +542,7 @@ input[type=radio]:checked + .slide{
     width:480px;
 }
 .slide2 h2{
-    margin-top:10px;
+    margin-bottom:35px;
     width:560px;
 }
 input[type=radio]:checked + .slide2{
@@ -551,7 +561,7 @@ input[type=radio]:checked + .slide2{
             justify-content: center;
 }
 .brends ul{
-    width:1200px;
+    width:1160px;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -733,7 +743,7 @@ footer{
     background-color: #464646;
 }
 .sup-footer{
-    width:1180px;
+    width:1160px;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -816,7 +826,7 @@ footer{
     background-color: #3c3c3c;
 }
 .sub-footer{
-    width:1180px;
+    width:1160px;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -1095,7 +1105,7 @@ input[name="remember_me"]:checked + label:before{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width:1180px;
+    width:1160px;
 }
 .way{
     display:-webkit-box;
@@ -1423,7 +1433,7 @@ width:820px;
 .product{
     width:355px;
     height:340px;
-    margin-right:30px;
+    margin-right:26px;
     margin-bottom:50px;
     border:1px solid #cdcccc;
 }
